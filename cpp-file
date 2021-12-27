@@ -39,20 +39,29 @@ ios::binary	二进制方式打开
 
 3.ifs.open()
   if(!ifs.is_open())	//判断是否读取成功
+
 4.读数据
+
 方式1：
   char buf[1024] = {0};
   while(ifs.getline(buf, sizeof(buf))){
   	cout << buf << endl;
   }
+
 方式2：
   string buf;
   while(getline(ifs, buf)){}
 
 5.ifs.close()
 
+------------------------------
+二进制文件
 
+写文件	// <<只能写输入文本
+ofs.write(data, size)
 
+读文件
+Ifs.read(&var, size)
 
 
 
