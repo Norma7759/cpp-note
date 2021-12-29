@@ -4,3 +4,8 @@ standard template library
 2.algorithm
 3.iterator
 
+4.仿函数
+5.适配器(配接器)
+6.空间配置器
+
+
