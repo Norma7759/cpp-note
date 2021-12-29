@@ -3,6 +3,11 @@ using namespace std;
 #include <vector>
 #include <algorithm>
 
+
+void print(int val){
+    cout << val << endl;
+}  
+
 int main(){
     
     //创建了一个vector容器，数组
@@ -29,11 +34,7 @@ int main(){
     }   //常用
 
 
-    void print(int val){
-        cout << val << endl;
-    }
-    for_each(v.begin, v.end(), val);    //使用了标准算法
-
+    for_each(v.begin(), v.end(), print);    //使用了标准算法
 
 
 
